@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>QR Code Generator</title>
+</head>
+
+<body>
+    <div class="container flex">
+        <div class="top-area flex">
+            <div class="left-area flex">
+                <h1>QR Code Generator</h1>
+                <p>QR Codes allows smartphone users to access your website simply and quickly.
+                    <br> Enter any text or URL below to generate a QR Code.</p>
+                <input type="text" name="" id="qrText" placeholder="Enter text or URL">
+                <button id="generate-btn">Generate QR Code</button>
+            </div>
+            <div class="right-area">
+                <img src="image.avif" alt="">
+            </div>
+        </div>
+        <div class="bottom-area flex hidden">
+            <img src="" id="qr-image" class="">
+            <!-- <button id="download-btn">Save Image</button> -->
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color:#f7f7f7;
+}
+
+.flex{
+    display: flex;
+}
+
+h1{
+    font-weight: 800;
+}
+
+.container{
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.top-area{
+    width: 60vw;
+    justify-content: center;
+    margin-inline: auto;
+    margin-top: 50px;
+}
+
+.left-area{
+    flex-direction: column;
+    flex-basis: 60%;
+    padding-top: 30px;
+    justify-content: space-between;
+}
+
+.right-area{
+    flex-basis: 40%;
+}
+
+img{
+    width: 300px;
+}
+
+input, button{
+    padding: 10px;
+    width: 350px;
+    border: 1px solid rgb(146, 146, 146);
+    border-radius: 10px;
+    background-color: inherit;
+    font-size: 1rem;
+}
+
+button{
+    background-color: #656682;
+    color: #f7f7f7;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #656682;
+    box-shadow: 0 0 10px #a2a2a2;
+}
+
+.error{
+    animation: shake 0.1s linear 5;
+}
+
+@keyframes shake{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-2px);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    75%{
+        transform: translateX(2px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+.bottom-area{
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+#qr-image{
+    width: 170px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.hidden{
+    display: none;
+}
+
+#download-btn{
+    width: 170px;
+}
+
+
+/* Media Queris */
+@media screen and (max-width: 690px) {
+    .right-area{
+        display: none;
+    }
+
+    .left-area{
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .top-area {
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 399px) {
+    input,
+        button {
+            width: 250px;
+        }
+
+    h1{
+        font-size: 1.5rem;
+    }
+}
